@@ -3,9 +3,9 @@ error_reporting(E_ALL);
 
 // Zum Aufbau der Verbindung zur Datenbank
 define ( 'MYSQL_HOST',      'localhost' );
-define ( 'MYSQL_BENUTZER',  'serverstatusv2' );
-define ( 'MYSQL_KENNWORT',  '86@wj7zK' );
-define ( 'MYSQL_DATENBANK', 'serverstatusv2' );
+define ( 'MYSQL_BENUTZER',  '' );
+define ( 'MYSQL_KENNWORT',  '' );
+define ( 'MYSQL_DATENBANK', '' );
 
 $db_link = mysqli_connect (MYSQL_HOST, 
                            MYSQL_BENUTZER, 
@@ -14,8 +14,7 @@ $db_link = mysqli_connect (MYSQL_HOST,
 
 if ( $db_link )
 {
-    echo 'Verbindung erfolgreich: ';
-    print_r( $db_link);
+    echo '';
 }
 else
 {
